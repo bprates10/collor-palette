@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Entrega I - IGTI</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Entregável I - Paleta de Cores RGB</h1>
+        <table>
+            <tr>
+                <td class="slider-bar">
+                    <label>Red Color:</label>
+                    <br>
+                    <input type="range" value="0" min="0" max="255" id="red-slider"
+                        onchange="changeColor(event, 'red')" />
+                    <input type="text" value="0" id="red-input" disabled />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="slider-bar">
+                    <label>Green Color:</label>
+                    <br>
+                    <input type="range" value="0" min="0" max="255" id="green-slider"
+                        onchange="changeColor(event, 'green')" />
+                    <input type="text" value="0" id="green-input" disabled />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="slider-bar">
+                    <label>Blue Color:</label>
+                    <br>
+                    <input type="range" value="0" min="0" max="255" id="blue-slider"
+                        onchange="changeColor(event, 'blue')" />
+                    <input type="text" value="0" id="blue-input" disabled />
+                </td>
+            </tr>
+        </table>
+
+        <div class="color-palette"></div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./index.js"></script>
